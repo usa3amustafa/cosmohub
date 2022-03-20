@@ -901,6 +901,10 @@ footer {
 
   /* jobs */
 
+  .jobs {
+    padding: 2rem 0;
+  }
+
   .jobs-section {
     padding: 4rem 0 6rem 0;
   }
