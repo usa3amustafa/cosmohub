@@ -492,6 +492,11 @@ footer {
   margin-bottom: 1rem;
 }
 
+.footer-desc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 .col-2,
 .col-3 {
   display: grid;
@@ -716,4 +721,160 @@ footer {
 .apply-btn {
   align-self: center;
   justify-self: flex-end;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .membership-side-img {
+    display: none;
+  }
+
+  .pricing-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  .pricing-card:last-child {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* homepage */
+
+  .hero {
+    padding: 8rem 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .home-hero {
+    text-align: center;
+    padding-bottom: 0rem;
+  }
+
+  .hero-title {
+    max-width: 100%;
+  }
+
+  .hero-desc {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .section-2col {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .section-text {
+    justify-self: center;
+  }
+
+  .services-section-img {
+    display: none;
+  }
+
+  .vision-section-img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .key-points {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions-bg {
+    display: none;
+  }
+
+  .solutions-section-img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .benefits-section {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  .benefit-desc {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .gallery-section {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .gallery-section-img {
+    display: none;
+  }
+
+  .membership-section-img {
+    display: none;
+  }
+
+  /* pricing */
+}
+
+@media (max-width: 660px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  input {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .form-btn {
+    justify-self: center;
+  }
+
+  .section-btns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+  }
+
+  .col-2 {
+    display: none;
+  }
+  .col-3 {
+    justify-content: flex-start;
+  }
 }
