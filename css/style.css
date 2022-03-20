@@ -916,6 +916,10 @@ footer {
     margin-bottom: 2rem;
   }
 
+  .apply-btn {
+    justify-self: flex-start;
+  }
+
   /* footer */
   .footer {
     grid-template-columns: 1fr;
