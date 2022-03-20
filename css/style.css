@@ -733,6 +733,10 @@ footer {
   .pricing-card {
     padding: 2rem;
   }
+
+  .benefits-title {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 880px) {
@@ -744,6 +748,10 @@ footer {
   .pricing-card:last-child {
     grid-column: 1/-1;
     justify-self: center;
+  }
+
+  .benefits-title {
+    margin-bottom: 1rem;
   }
 }
 
@@ -817,6 +825,10 @@ footer {
     row-gap: 2rem;
   }
 
+  .benefits-title {
+    margin-bottom: 0rem;
+  }
+
   .benefit-desc {
     max-width: 250px;
     margin: 0 auto;
@@ -836,9 +848,40 @@ footer {
   }
 
   /* pricing */
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    justify-self: center;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(0rem);
+  }
+
+  /* events */
+
+  .latest-events {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .event-img {
+    display: none;
+  }
 }
 
 @media (max-width: 660px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  .hero {
+    padding: 4rem 0;
+  }
+
   form {
     display: grid;
     grid-template-columns: 1fr;
@@ -861,6 +904,24 @@ footer {
     gap: 1rem;
   }
 
+  /* jobs */
+
+  .job {
+    grid-template-columns: 1fr;
+  }
+
+  .job-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .apply-btn {
+    justify-self: flex-start;
+  }
+
+  /* footer */
   .footer {
     grid-template-columns: 1fr;
     row-gap: 2rem;
