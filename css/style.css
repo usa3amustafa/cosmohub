@@ -4,6 +4,7 @@
   --pri-clr: #ffbe0b;
   --black-clr: rgba(0, 0, 0, 0.99);
   --blue-clr: #17e0f1;
+  --blue-light: #cbd9fd;
   --white-clr: #fefefe;
   --purple-clr: #4313a9;
   --light-grey-clr: rgba(243, 243, 243, 0.6);
@@ -94,9 +95,13 @@ section {
 
 /* header  */
 
-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-    url('./img/header-bg.png');
+.home-hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url('../img/header-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -390,7 +395,7 @@ input:focus {
 /* gallery section */
 
 .lines-bg {
-  background: url('./img/lines-bg.svg');
+  background: url('../img/lines-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -465,7 +470,7 @@ input:focus {
 /* footer */
 
 footer {
-  background: url('./img/footer-bg.png');
+  background: url('../img/footer-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
