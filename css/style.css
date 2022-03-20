@@ -631,7 +631,7 @@ footer {
 
 .latest-events {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   column-gap: 2rem;
 }
 
@@ -863,11 +863,6 @@ footer {
 
   /* events */
 
-  .latest-events {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-  }
-
   .event-img {
     display: none;
   }
@@ -905,6 +900,10 @@ footer {
   }
 
   /* jobs */
+
+  .jobs-section {
+    padding: 4rem 0 6rem 0;
+  }
 
   .job {
     grid-template-columns: 1fr;
