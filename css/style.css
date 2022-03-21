@@ -143,7 +143,7 @@ section {
 }
 
 .close-btn {
-  color: var(--purple-clr);
+  color: var(--white-clr);
   display: none;
   font-size: 2rem;
   position: absolute;
