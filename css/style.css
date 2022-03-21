@@ -29,6 +29,13 @@
 body {
   background-color: var(--black-clr);
   color: var(--white-clr);
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  overflow: hidden;
 }
 
 a {
@@ -102,7 +109,7 @@ section {
 
 .header {
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .home-hero {
@@ -119,8 +126,6 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   /* background-attachment: fixed; */
-
-  padding-bottom: 6rem;
 }
 
 /* nav  */
@@ -248,24 +253,37 @@ section {
 
 /* hero section  */
 
+.hero {
+  min-height: calc(100vh - 6rem);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
 .hero-title {
+  text-align: center;
   font-size: 2.5rem;
-  max-width: 20ch;
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
 
 .hero-desc {
-  max-width: 40ch;
   line-height: 1.6;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 form {
   display: flex;
   justify-content: space-between;
-  max-width: 720px;
-
+  align-items: center;
   background-color: var(--light-grey-clr);
   padding: 2rem;
   border-radius: 1rem;
@@ -561,32 +579,10 @@ footer {
 
 /* pricing */
 
-.page-hero {
-  /* min-height: 90vh; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
-    url('../img/bg-pages.png');
-  background-size: cover;
-  background-position: bottom center;
-}
-
-.page-hero-section {
-  text-align: center;
-  padding: 6rem 0 20rem 0;
-}
-
-.page-hero-title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
 .pricing-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
-}
-
-.up {
-  margin-top: -18rem;
 }
 
 .pricing-card {
@@ -784,6 +780,10 @@ footer {
 @media (max-width: 768px) {
   /* homepage */
 
+  /* .up {
+    margin-top: 0rem;
+  } */
+
   .hero {
     padding: 8rem 0;
   }
@@ -798,7 +798,7 @@ footer {
     top: 0;
     right: 0;
 
-    z-index: 1;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
@@ -827,23 +827,20 @@ footer {
     display: none;
   }
 
-  \ .home-hero {
+  .home-hero {
     text-align: center;
     padding-bottom: 0rem;
   }
 
   .hero-title {
     max-width: 100%;
+    text-align: center;
   }
 
   .hero-desc {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  form {
-    padding: 1rem;
   }
 
   section {
@@ -916,6 +913,7 @@ footer {
 
   .pricing-card {
     justify-self: center;
+    z-index: 1;
   }
 
   .pricing-card:hover {
@@ -943,13 +941,13 @@ footer {
   }
 
   form {
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr;
   }
 
   input {
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
@@ -1036,5 +1034,5 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
